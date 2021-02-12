@@ -28,7 +28,7 @@ class StartScene extends Phaser.Scene {
               
           
   
-  gameState.easyButton = this.add.text(100, 500, 'Easy', { fill: '#4D39E0', fontSize: '20px' });
+  gameState.easyButton = this.add.text(100, 500, 'Easy', { fill: '#4D39E0', fontSize: '20px' }).setOrigin(0.5);
   gameState.easyButton.setInteractive();
   
   gameState.easyButton.on('pointerup', () => {
@@ -38,7 +38,7 @@ class StartScene extends Phaser.Scene {
    });
   
   
-   gameState.normalButton = this.add.text(225, 500, 'Normal', { fill: '#4D39E0', fontSize: '20px' });
+   gameState.normalButton = this.add.text(225, 500, 'Normal', { fill: '#4D39E0', fontSize: '20px' }).setOrigin(0.5);
   gameState.normalButton.setInteractive();
   
   gameState.normalButton.on('pointerup', () => {
@@ -48,7 +48,7 @@ class StartScene extends Phaser.Scene {
    });
   
   
-   gameState.hardButton = this.add.text(350, 500, 'Hard', { fill: '#4D39E0', fontSize: '20px' });
+   gameState.hardButton = this.add.text(350, 500, 'Hard', { fill: '#4D39E0', fontSize: '20px' }).setOrigin(0.5);
   gameState.hardButton.setInteractive();
   
   gameState.hardButton.on('pointerup', () => {
